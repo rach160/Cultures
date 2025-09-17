@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sanâa (musique) — Sanâa.html</title>
+  <style>
+    :root{
+      --bg:#f7f7f9; --card:#ffffff; --accent:#0a66c2; --muted:#666;
+      --maxw:1100px;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:linear-gradient(180deg, #fbfcfd 0%, var(--bg) 100%);
+      color:#111;
+      line-height:1.55;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:20px;
+      display:flex;
+      justify-content:center;
+      font-size:16px;
+    }
+    .container{
+      width:100%;
+      max-width:var(--maxw);
+    }
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      margin-bottom:18px;
+      flex-wrap:wrap;
+    }
+    .title{flex:1}
+    h1{margin:0;font-size:1.8rem}
+    .subtitle{color:var(--muted); font-size:0.95rem}
+    nav.toc{background:var(--card); padding:10px 14px; border-radius:10px; box-shadow:0 4px 12px rgba(10,15,30,0.04); margin-bottom:18px}
+    nav.toc a{color:var(--accent); text-decoration:none; display:inline-block; margin-right:12px; font-size:0.95rem}
+    .card{
+      background:var(--card);
+      border-radius:12px;
+      box-shadow:0 8px 30px rgba(15,20,30,0.05);
+      padding:18px;
+      margin-bottom:18px;
+    }
+    .hero{
+      display:grid;
+      grid-template-columns: 240px 1fr;
+      gap:18px;
+      align-items:start;
+      margin-bottom:20px;
+    }
+    .thumb{
+      width:100%;
+      height:150px;
+      object-fit:cover;
+      border-radius:8px;
+      background:#ddd;
+      display:block;
+      margin-bottom:8px;
+    }
+    .meta-table{width:100%; border-collapse:collapse; margin-top:8px}
+    .meta-table th, .meta-table td{padding:8px 6px; border-bottom:1px solid #f1f3f5; text-align:left}
+    .meta-table th{width:36%; color:var(--muted); font-weight:700}
+    section{margin-bottom:18px}
+    .two-col{display:grid; grid-template-columns:1fr 320px; gap:18px}
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .two-col{grid-template-columns:1fr}
+    }
+    .arabic{
+      font-family: "Scheherazade New", "Amiri", "Noto Naskh Arabic", serif;
+      direction:rtl;
+      text-align:right;
+      display:block;
+      padding:10px 12px;
+      border-radius:8px;
+      background:#fffafa;
+      margin-top:8px;
+      border:1px solid #f0e6e6;
+    }
+    table.small{font-size:0.95rem; border-collapse:collapse; width:100%}
+    table.small th, table.small td{padding:8px; border:1px solid #eee}
+    .small{font-size:0.92rem;color:var(--muted)}
+    footer{margin-top:12px;color:var(--muted);font-size:0.9rem;text-align:center}
+    code{background:#f3f6fb;padding:2px 6px;border-radius:4px}
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <div class="title">
+        <h1>Sanâa (musique)</h1>
+        <div class="subtitle">Répertoire arabo-andalou savant — École d'Alger</div>
+      </div>
+      
+    </header>
+
+    <nav class="toc card" aria-label="Table des matières">
+      <a href="#intro">Introduction</a>
+      <a href="#donnees-cles">Données clés</a>
+      <a href="#histoire">Histoire</a>
+      <a href="#structure-modes">Structure — Modes</a>
+      <a href="#mizan">Système rythmique : Mizân</a>
+      <a href="#nuba">Formes : la Nûba</a>
+    </nav>
+
+    <!-- INTRO + DONNEES -->
+    <div class="hero">
+      <div class="card" id="donnees-cles" aria-labelledby="donnees-cles-title">
+        <h2 id="donnees-cles-title" style="margin-top:0">Données clés</h2>
+        <img src="Moutribia 1930.jpg" alt="Orchestre de la Moutribia (illustration)" class="thumb">
+        <table class="meta-table" role="table">
+          <tr><th>Origines stylistiques</th><td>École de musique de Cordoue (Espagne musulmane)</td></tr>
+          <tr><th>Origines culturelles</th><td>Algérie — École d'Alger (tradition rattachée à Cordoue)</td></tr>
+          <tr><th>Instruments typiques</th><td>Rabâb (vièle), kuitra (luth algérien), kemandja, mandoline, qanun, flûte</td></tr>
+          <tr><th>Popularité</th><td>Algérie, Maghreb (Maroc), diaspora en France & Canada (Québec)</td></tr>
+          <tr><th>Scènes régionales</th><td>Alger (et villes de l'Algérois), Mostaganem, Béjaïa, Bordj Bou Arreridj, Tizi Ouzou, diaspora</td></tr>
+          <tr><th>Sous-genres</th><td>Nouba, Inqilab, Qadriya</td></tr>
+          <tr><th>Genres dérivés</th><td>Chaâbi, Aroubi, Hawzi, Medh (Rahawi)</td></tr>
+        </table>
+      </div>
+
+      <div class="card" id="intro">
+        <h2>Introduction</h2>
+        <p>
+          La <strong>sanâa</strong> (arabe : <span class="arabic" style="direction:rtl;padding:6px 10px;margin:6px 0">الصّنعة<br><small style="direction:ltr;display:block">əṣ-ṣanʿa</small></span>) 
+          — parfois appelée l’« Andalou » à Alger — désigne le répertoire savant arabo-andalou associé à l'École d'Alger. 
+          Le mot <em>sanâa</em> signifie « maîtrise musicale » et évoque aussi la relation entre artisanat et musique (çnay'i = maîtres d'œuvre).
+        </p>
+
+        
+
+       
+    </div>
+
+    <!-- HISTOIRE -->
+    <section class="card" id="histoire">
+      <h2>Histoire </h2>
+
+      <figure style="margin:0 0 12px 0;">
+        <img src="mosquee Sidi Abderrahmane.jpg" alt="Mosquée Sidi Abderrahmane à Alger" class="thumb">
+        <figcaption class="small">La mosquée Sidi Abderrahmane à Alger — lieu d'innovations religieuses-musicales.</figcaption>
+      </figure>
+
+      <p>
+        Au XVIIe siècle, devant le risque d'altération ou de perte de la transmission du répertoire arabo-andalou, 
+        les muftis hanafites d'Alger décidèrent d'adapter des airs de noubas aux textes religieux psalmodiés dans les mosquées. 
+        Les chanteurs interprétaient des textes strictement religieux (par ex. <em>Soubhan allahi wa bi hamdihi soubhan allahi la dhi</em>). 
+        Cette innovation, née à Alger, s'est ensuite diffusée à Blida, Médéa et Miliana. La mosquée Sidi Abderrahmane fut le lieu privilégié d'interprétation.
+      </p>
+
+      <p>
+        Après la chute de la régence d'Alger, l'un des maîtres les plus connus fut <strong>Cheikh Mnemèche</strong> (décédé à la fin du XIXᵉ siècle) — il jouait la kuitra et détenait un large répertoire classique algérois. 
+        Il était accompagné au rabâb par <strong>Maalem Ben Farachou</strong>, et parmi ses élèves figure <strong>Cheikh Sfindja</strong>.
+      </p>
+
+      <figure style="margin:0 0 12px 0;">
+        <img src="cheikh Sfindja  1900.jpg" alt="Orchestre du Cheikh Sfindja vers 1900" class="thumb">
+        <figcaption class="small">Orchestre du cheikh Sfindja, vers 1900.</figcaption>
+      </figure>
+
+      <p>
+        Trois acteurs marquants — <strong>Cheikh Sfindja</strong>, <strong>Edmond Nathan Yafil</strong> et <strong>Jules Rouanet</strong> — menèrent un travail de sauvegarde décisif. 
+        Entre 1899 et 1902 ils transcrivirent environ 76 airs ; Rouanet intégra un chapitre sur la musique arabe dans l'Encyclopédie de la Musique (1903). 
+        Après la mort de Sfindja en 1908, Yafil poursuivit les transcriptions, aidé de Cheikh Laho Seror et Cheikh Saïdi pour les aspects solfégiques.
+      </p>
+
+      <p>
+        Du chant classique naquit le genre <em>medh</em>, qui, à partir d'une base poético-religieuse, s'ouvrit au profane et séduisit un public plus large. 
+        De même l'<em>aroubi</em> et le <em>chaâbi</em> s'inspirent des modes et rythmes de la nouba algéroise.
+      </p>
+
+      <p>
+        Dès les années 1920 émergea à Alger un important mouvement associatif (musical, juif et musulman) : <em>El Moutribia</em> (1912), <em>Ifrikia Club</em> (1924), <em>El-Andalousia</em> (1929), <em>El-Djazaïria</em> (1930), <em>El-Mossilia</em> (1928/1932) et <em>El-Ghernata</em> (1933). 
+        L'introduction d'instruments nouveaux (mandoline, piano) et l'augmentation des effectifs orchestraux facilitèrent la diffusion en plein air et la codification de répertoires, dont une partie alimentera plus tard le chaâbi.
+      </p>
+    </section>
+
+    <!-- STRUCTURE — MODES -->
+    <section class="card" id="structure-modes">
+      <h2>Structure — Modes</h2>
+
+      <h3>Modes (ṭabʿ / ṭūbūʿ)</h3>
+      <p>
+        Il existe seize modes (الطبع : <em>ṭabʿ</em>, الطبوع : <em>ṭūbūʿ</em> au pluriel) répartis en sept modes fondamentaux (définis par sept <em>Istiḥbār</em>) et neuf dérivés.
+      </p>
+      <section class="media-section">
+  <div class="media-card">
+    <h2>Vidéo (responsive)</h2>
+
+    <div class="video-wrap">
+      <video controls poster="poster.jpg" preload="metadata">
+        <!-- Fournis plusieurs formats pour compatibilité -->
+        <source src="video.webm" type="video/webm">
+        <source src="video.mp4" type="video/mp4">
+        <!-- Texte de secours -->
+        Votre navigateur ne supporte pas la balise vidéo.
+      </video>
+    </div>
+
+    <div class="controls-row">
+      <audio controls preload="none">
+        <source src="Lalat.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas la balise audio.
+      </audio>
+
+      <a class="download" href="Lalat.mp3" download>Télécharger le MP3</a>
+    </div>
+
+    <p class="caption">Description courte de la vidéo / audio (crédit, auteur...).</p>
+  </div>
+</section>
+
+      <table class="small" aria-label="Table des Istiḥbār et modes">
+        <thead>
+          <tr>
+            <th>Istiḥbār de référence</th>
+            <th>Modes fondamentaux</th>
+            <th>Modes dérivés</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Istiḥbār Mawwāl</td>
+            <td>Mawwāl (الموال)</td>
+            <td>Dīl (الذيل), Raṣd ə-Dīl (رصد الذيل), Māya (الماية)</td>
+          </tr>
+          <tr>
+            <td>Istiḥbār Zīdān</td>
+            <td>Zīdān (الزيدان)</td>
+            <td>Raml (الرمل), Mǧənba (المجنبة)</td>
+          </tr>
+          <tr>
+            <td>Istiḥbār Raml əl-Māya</td>
+            <td>Raml əl-Māya (رمل الماية)</td>
+            <td>Raṣd (الرصد)</td>
+          </tr>
+          <tr>
+            <td>Istiḥbār 'Iraq</td>
+            <td>'Iraq (العراق)</td>
+            <td>Ḥsīn (الحسين), Ġrīb (الغريب), Ġrībat əl-Ḥsīn (غريبة الحسين)</td>
+          </tr>
+          <tr>
+            <td>Istiḥbār Ǧārkā</td>
+            <td>Ǧārkā (الجاركاه)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>Istiḥbār Ṣīkā</td>
+            <td>Ṣīkā (السيكاه)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>Istiḥbār Məzmūm</td>
+            <td>Məzmūm (المزموم)</td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>Modes perdus / annexes</h4>
+      <ul>
+        <li>Asbaʿayn (الاصبعين)</li>
+        <li>Ḥsīn Aṣīl (الحسين الاصيل)</li>
+        <li>Ḥsīn Ṣabā (الحسين صبا)</li>
+        <li>Ḥsīn ʿUšəyrān (الحسين عشيران)</li>
+        <li>Iṣbahān Kabīr (الاصبهان الكبير)</li>
+        <li>Iṣbahān Ṣaġir (الاصبهان الصغير)</li>
+        <li>Rahāwi (الرهاوي)</li>
+        <li>Raml əl-ʿAšiyya (رمل العشية)</li>
+        <li>Māya Fāriġ (الماية الفارغ)</li>
+        <li>ʿUššāq (العشّاق)</li>
+      </ul>
+
+      <h4>Moment de la journée — modes joués</h4>
+      <table class="small">
+        <thead>
+          <tr><th>Période</th><th>Modes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Après-midi</td><td>Raṣd (الرصد), Məzmūm (المزموم), Ṣīkā (السيكاه)</td></tr>
+          <tr><td>18:00 – 20:00</td><td>Raml (الرمل)</td></tr>
+          <tr><td>20:00 – 22:00</td><td>Raml əl-Māya (رمل الماية)</td></tr>
+          <tr><td>22:00 – 00:00</td><td>Ḥsīn (الحسين)</td></tr>
+          <tr><td>23:00 – 01:00</td><td>Dīl (الذيل), Mǧənba (المجنبة)</td></tr>
+          <tr><td>00:00 – 02:30</td><td>Ġrīb (الغريب), Zīdān (الزيدان)</td></tr>
+          <tr><td>02:30 – 03:30</td><td>Raṣd ə-Dīl (رصد الذيل)</td></tr>
+          <tr><td>03:30 – 05:00</td><td>Māya (الماية)</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- MIZÂN -->
+    <section class="card" id="mizan">
+      <h2>Système rythmique : Mizân</h2>
+
+      <p>
+        La notion de rythme dans la nûba algéroise combine le rythme de la percussion, celui de la mélodie et celui de la prosodie — 
+        elle diffère du muwashshah andalou où le rythme est imposé exclusivement par la musique.
+      </p>
+
+      <h3>Principaux mizân (cycles rythmiques)</h3>
+      <ul>
+        <li><strong>Mizân al-Bašraf (DTT)</strong> — une mesure à <em>2/4</em> ou <em>4/4</em> : utilisé pour les trois premières phases (Mṣeddar, Bṭāyḥī, Derǧ) et leurs kūrsi.</li>
+        <li><strong>Mizân al-Inṣirāf (DTD TTT)</strong> — une mesure à <em>6/8</em> : accompagne la quatrième phase (Inṣirāf), les tūšiyyet al-inṣirāfāt et les qadriyyat.</li>
+        <li><strong>Mizân al-H̱alās (D–D–TT)</strong> — une mesure à <em>6/8</em> dérivée de l’Inṣirāf (substitutions par silences + accélération) : accompagne la cinquième phase (H̱alās).</li>
+        <li><strong>Mîzān a-Sufyān</strong> — mesure à <em>2/4</em>, appelé aussi <em>mîzān əl-Inqilābāt</em> à Alger.</li>
+      </ul>
+
+      <section class="media-section">
+  <div class="media-card">
+    <h2>Vidéo (responsive)</h2>
+
+    <div class="video-wrap">
+      <video controls poster="poster.jpg" preload="metadata">
+        <!-- Fournis plusieurs formats pour compatibilité -->
+        <source src="video.webm" type="video/webm">
+        <source src="video.mp4" type="video/mp4">
+        <!-- Texte de secours -->
+        Votre navigateur ne supporte pas la balise vidéo.
+      </video>
+    </div>
+
+    <div class="controls-row">
+      <audio controls preload="none">
+        <source src="SelliHoumoumek.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas la balise audio.
+      </audio>
+
+      <a class="download" href="SelliHoumoumekmp3" download>Télécharger le MP3</a>
+    </div>
+
+    <p class="caption">Description courte de la vidéo / audio (crédit, auteur...).</p>
+  </div>
+</section>
+    </section>
+
+    <!-- NÛBA -->
+    <section class="card" id="nuba">
+      <h2>Formes — La Nûba</h2>
+
+      <p>
+        Une <strong>Nûba</strong> est une suite ordonnée de pièces vocales et instrumentales qui s'articule autour de <strong>cinq mouvements</strong> 
+        dont le rythme progresse du très lent au très léger. Ces mouvements se répartissent en deux phases : 
+        la première (Mṣeddar, Bṭāyḥī, Derǧ) et la seconde (Inṣirāf, H̱alās). Le nom de chaque mouvement provient du cycle rythmique qui le soutient.
+      </p>
+
+      <section class="media-section">
+  <div class="media-card">
+    <h2>Vidéo (responsive)</h2>
+
+    <div class="video-wrap">
+      <video controls poster="poster.jpg" preload="metadata">
+        <!-- Fournis plusieurs formats pour compatibilité -->
+        <source src="video.webm" type="video/webm">
+        <source src="video.mp4" type="video/mp4">
+        <!-- Texte de secours -->
+        Votre navigateur ne supporte pas la balise vidéo.
+      </video>
+    </div>
+
+    <div class="controls-row">
+      <audio controls preload="none">
+        <source src="IstikhbarDjarka.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas la balise audio.
+      </audio>
+
+      <a class="download" href="IstikhbarDjarka.mp3" download>Télécharger le MP3</a>
+    </div>
+
+    <p class="caption">Description courte de la vidéo / audio (crédit, auteur...).</p>
+  </div>
+
+      <h3>Structure détaillée d'une Nûba</h3>
+      <table class="small">
+        <thead>
+          <tr><th>Pièce</th><th>Description</th><th>Rythme</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dāyrā</td>
+            <td>Prélude vocal non mesuré (tlāliyāt : vocalisation de syllabes vides "Len yā lālān!") — conservé seulement dans Dil et Ġrīb.</td>
+            <td>Non mesuré</td>
+          </tr>
+          <tr>
+            <td>Məstəẖbar ə-Ṣanʿa</td>
+            <td>Prélude instrumental non mesuré exposant le mode (pré-introduction rythmique).</td>
+            <td>Non mesuré</td>
+          </tr>
+          <tr>
+            <td>Tūšiyya</td>
+            <td>Ouverture instrumentale mesurée composée de phrases répétées, rappelant les signatures rythmiques des cinq mouvements.</td>
+            <td>Mesures à 2 et 4 temps</td>
+          </tr>
+          <tr>
+            <td>Krîsi al-Mṣeddar</td>
+            <td>Assise mélodico-rythmique du premier mouvement (kūrsi = "chaise").</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td><strong>Mṣeddar</strong></td>
+            <td>Premier mouvement — lent, solennel, pièce maîtresse.</td>
+            <td>4/4 (Mîzān Mṣeddar) — Adagio</td>
+          </tr>
+          <tr>
+            <td>Krîsi al-Bṭāyḥī</td>
+            <td>Assise du second mouvement.</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td><strong>Bṭāyḥī</strong></td>
+            <td>Deuxième mouvement — vocal/instrumental.</td>
+            <td>4/4 (Mîzān Bṭāyḥī) — Andante</td>
+          </tr>
+          <tr>
+            <td>Istiḥbār</td>
+            <td>Prélude vocal non mesuré montrant la virtuosité — présent dans plusieurs modes fondamentaux.</td>
+            <td>Non mesuré</td>
+          </tr>
+          <tr>
+            <td>Krîsi ad-Derǧ</td>
+            <td>Assise du troisième mouvement.</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td><strong>Derǧ</strong></td>
+            <td>Troisième mouvement — plus vif.</td>
+            <td>4/4 (Mîzān Derǧ) — Andantino → Allegretto</td>
+          </tr>
+          <tr>
+            <td>Tūšiyyet al-Inṣirāfāt</td>
+            <td>Interlude instrumental long, introduit l'Inṣirāf; peut être remplacé par Krîsi al-Inṣirāf.</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td><strong>Inṣirāf</strong></td>
+            <td>Quatrième mouvement — vocal/instrumental.</td>
+            <td>6/8 (Mîzān Inṣirāf) — Dûm Tek Dûm Tek Tek Tek</td>
+          </tr>
+          <tr>
+            <td>Dlīdla</td>
+            <td>Pièce vocale populaire (court poème dialectal) intercalée entre deux Inṣirāf.</td>
+            <td>6/8</td>
+          </tr>
+          <tr>
+            <td><strong>H̱alās</strong></td>
+            <td>Cinquième mouvement — concluant, suit directement l'Inṣirāf sans kūrsi.</td>
+            <td>6/8 (Mîzān H̱alās) — Dûm_Dûm _TekTek (accéléré)</td>
+          </tr>
+          <tr>
+            <td>Qadriyya</td>
+            <td>Pièce vocale féminine (2 vers), existant dans plusieurs modes (ʿIrāq, Raml ə-Māya, Zīdān, Ṣīkā, Mawwāl, Mǧənba).</td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    
+
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Culture Algérienne</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background: #fdfdfd;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #006400;
+    }
+    img {
+      max-width: 200px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .auteur {
+      font-style: italic;
+      color: #444;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Culture Algérienne</h1>
+
+  <title>Dynasties médiévales en Algérie</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background: #f4f4f9;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      max-width: 900px;
+      margin: 0 auto 20px auto;
+      text-align: justify;
+    }
+
+    .dynasties {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    figure {
+      background: #fff;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    figure:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    figure img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    figcaption {
+      margin-top: 8px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    b {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 1.05rem;
+      color: #222;
+    }
+
+    /* ---- Lightbox ---- */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      padding: 40px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    .lightbox img {
+      display: block;
+      margin: auto;
+      max-width: 90%;
+      max-height: 80vh;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+
+    .lightbox:target {
+      display: block;
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: #fff;
+      font-size: 2rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* ---- Navigation ---- */
+    .nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2.5rem;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      background: rgba(0,0,0,0.3);
+      border-radius: 50%;
+      transition: background 0.3s;
+    }
+
+    .nav:hover {
+      background: rgba(0,0,0,0.6);
+    }
+
+    .prev { left: 20px; }
+    .next { right: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Dynasties médiévales en Algérie</h1>
+
+  <p>Durant la période médiévale (VIIIe-XVe siècle), l’Algérie fut un centre intellectuel et religieux majeur du Maghreb. 
+  Sous les dynasties successives :</p>
+
+  <div class="dynasties">
+    <figure>
+      <b>Rostémides</b>
+      <a href="#img1"><img src="Rostemides.jpg" alt="Rostémides"></a>
+      <figcaption>Rostémides 777–909</figcaption>
+    </figure>
+
+    <figure>
+      <b>Zirides</b>
+      <a href="#img2"><img src="Zirides.jpg" alt="Zirides"></a>
+      <figcaption>Zirides 972-1148</figcaption>
+    </figure>
+
+    <figure>
+      <b>Hammadides</b>
+      <a href="#img3"><img src="Les Hammadides.jpg" alt="Les Hammadides"></a>
+      <figcaption>Hammadides 1007 à 1152</figcaption>
+    </figure>
+
+    <figure>
+      <b>Almohades</b>
+      <a href="#img4"><img src="Empire almohade.jpg" alt="Empire almohade"></a>
+      <figcaption>Almohades 1121/1147–1269</figcaption>
+    </figure>
+
+    <figure>
+      <b>Zianides</b>
+      <a href="#img5"><img src="Sultanat zianide.jpg" alt="Sultanat zianide"></a>
+      <figcaption>Zianides 1235–1556</figcaption>
+    </figure>
+  </div>
+
+  <p>Elle vit l’émergence de nombreux penseurs, historiens et théologiens influents.</p>
+
+  <!-- Lightbox avec navigation -->
+  <div id="img1" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <a href="#img5" class="nav prev">&#10094;</a>
+    <img src="Rostemides.jpg" alt="Rostémides">
+    <a href="#img2" class="nav next">&#10095;</a>
+  </div>
+
+  <div id="img2" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <a href="#img1" class="nav prev">&#10094;</a>
+    <img src="Zirides.jpg" alt="Zirides">
+    <a href="#img3" class="nav next">&#10095;</a>
+  </div>
+
+  <div id="img3" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <a href="#img2" class="nav prev">&#10094;</a>
+    <img src="Les Hammadides.jpg" alt="Les Hammadides">
+    <a href="#img4" class="nav next">&#10095;</a>
+  </div>
+
+  <div id="img4" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <a href="#img3" class="nav prev">&#10094;</a>
+    <img src="Empire almohade.jpg" alt="Empire almohade">
+    <a href="#img5" class="nav next">&#10095;</a>
+  </div>
+
+  <div id="img5" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <a href="#img4" class="nav prev">&#10094;</a>
+    <img src="Sultanat zianide.jpg" alt="Sultanat zianide">
+    <a href="#img1" class="nav next">&#10095;</a>
+  </div>
+
+  <h3>Historiens et penseurs</h3>
+  <ul>
+    <li><b>Ibn Hammad</b> (XIIe siècle) – Historien et chroniqueur du Maghreb central.</li>
+  </ul>
+
+  <h3>Théologiens et juristes</h3>
+  <ul>
+    <li><b>Ibn Rustum</b> (VIIIe-IXe siècle) – Fondateur de la dynastie rostémide à Tahert, rédigeant sur la gouvernance et la doctrine ibadite.</li>
+    <li><b>Sidi Abderrahman et-Thaâlibi  
+      <figure>
+      <b></b>
+      <a href="#img6"><img src="Tombeau de Sidi Abderrahmane.jpg" alt="Tombeau de Sidi Abderrahmane"></a>
+      <figcaption>Tombeau de Sidi Abderrahmane et-Thaâlibi </figcaption>
+    </figure>
+      <!-- Lightbox avec navigation -->
+  <div id="img6" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <a href="#img5" class="nav prev">&#10094;</a>
+    <img src="Tombeau de Sidi Abderrahmane.jpg" alt="Tombeau de Sidi Abderrahmane">
+    <a href="#img6" class="nav next">&#10095;</a>
+
+    </b> (1384-1479) – Théologien soufi, exégète du Coran et auteur d’ouvrages sur la spiritualité.</li>
+  </ul>
+
+  <h2>XXème siècle – Révolution Algérienne</h2>
+  <p>La littérature algérienne de cette époque avait pour but d’affirmer l’entité nationale, en opposition aux clichés coloniaux. 
+  Parmi les œuvres majeures : <i>La Grande Maison</i>, <i>L’Incendie</i>, et <i>Le Métier à tisser</i> de Mohammed Dib, ainsi que <i>Nedjma</i> de Kateb Yacine.</p>
+
+  <div class="gallery">
+    <div>
+      <p class="auteur">Kateb Yacine – écrivain, poète et dramaturge</p>
+      <img src="Kateb Yacine.jpg" alt="Kateb Yacine">
+    </div>
+    
+
+    <div>
+      <p class="auteur">Moufdi Zakaria – poète et auteur de chants patriotiques</p>
+      <img src="moufdi.jpg" alt="Moufdi Zakaria">
+    </div>
+    
+
+    <div>
+      <p class="auteur">Assia Djebar – académicienne française, grande figure de la littérature</p>
+      <img src="Assia Djebar.jpg" alt="Assia Djebar">
+    </div>
+    
+
+    <div>
+      <p class="auteur">Ahlem Mosteghanemi – écrivaine algérienne, la plus lue du monde arabe</p>
+      <img src="Ahlem Mosteghanemi.jpg" alt="Ahlem Mosteghanemi">
+    </div>
+
+    <div>
+      <p class="auteur">Mouloud Feraoun – figure littéraire, assassiné en 1962</p>
+      <img src="Mouloud Feraoun.jpg" alt="Mouloud Feraoun">
+    </div>
+
+  </div>
+
+  <h2>Post Révolution Algérienne</h2>
+  <p>La littérature algérienne contemporaine se divise entre une écriture marquée par le terrorisme des années 1990 et une littérature plus individualiste. 
+  Parmi les œuvres marquantes : <i>L’Écrivain</i>, <i>Les Hirondelles de Kaboul</i> et <i>L’Attentat</i> de Yasmina Khadra 
+   <div>
+      
+      <img src="Yasmina Khadra.jpg" alt="Yasmina Khadra">
+    
+  
+   <i>Mémoire de la chair</i> d’Ahlem Mosteghanemi, et <i>Nulle part dans la maison de mon père</i> d’Assia Djebar.</p>
+
+  <h2>Beaux-Arts</h2>
+  <ul>
+    <li>Agence algérienne pour le rayonnement culturel</li>
+    <li>Arts de l’Islam</li>
+    <li>École supérieure des beaux-arts d'Alger (1843)</li>
+    <li>École régionale des beaux-arts de Batna (1987)</li>
+    <li>Musée national des Beaux-Arts d'Alger (1930)</li>
+    <li>Musée national Zabana d'Oran (1885)</li>
+    <li>Musée national du Bardo (1985)</li>
+    <li>Musée d’Art moderne et contemporain d’Alger (MAMA, 2007)</li>
+    <li>Musée national des Antiquités et des Arts islamiques (1897)</li>
+    <li>Bijoux berbères et kabyles, art hafside, ziride, hammadide, almoravide et almohade</li>
+  </ul>
+
+  <p><a href="index.html">⬅ Retour à l’index</a></p>
+  <a href="Culture algérienne.html">suite à voir</a>
+
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Artisanat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      padding: 20px;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #006400;
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #228B22;
+      margin-top: 20px;
+    }
+    p {
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+    ul {
+      text-align: left;
+      display: inline-block;
+      margin: 10px auto;
+      font-size: 18px;
+    }
+    .btn-retour {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 18px;
+      background: #006400;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn-retour:hover {
+      background: #228B22;
+    }
+    .container {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Artisanat</h1>
+
+    <p>
+      L’artisanat algérien est riche et diversifié, chaque région possédant ses propres traditions et savoir-faire. 
+      Il témoigne d’une grande créativité et d’un héritage culturel préservé.
+    </p>
+
+    <h2>Quelques spécialités artisanales</h2>
+    <ul>
+      <li><strong>Poterie</strong> et <strong>céramique</strong> aux motifs traditionnels.</li>
+      <a href="poterie.jpg">Voir l’image poterie</a>
+      <li><strong>Tissage</strong> et <strong>tapis berbères</strong>, souvent colorés et décorés de symboles.</li>
+      <a href="Tapis berbere de Babar.jpg">Voir l’image Tapis berbere de Babar</a>
+      <!-- Vidéo locale -->
+  <video id="maVideo" controls width="640" height="360">
+    <source src="Tapis Berberes .mp4" type="video/mp4">
+    Votre navigateur ne supporte pas la balise <code>video</code>.
+  </video>
+
+  <p>
+    👉 <a href="#" onclick="document.getElementById('maVideo').play(); return false;">
+      Voir la vidéo
+    </a>
+  </p>
+
+      <li><strong>Maroquinerie</strong> (travail du cuir) raffinée.</li>
+     <a hr ef="maroquinerie algerienne.jpg">Voir l’image maroquinerie algerienne</a>
+      <li><strong>Travail du bois</strong> et objets sculptés.</li>
+      <a href="travail bois kabyle.jpg">Voir l’image travail bois kabyle</a>
+      <li><strong>Bijoux kabyles</strong> en argent, ornés de pierres colorées.</li>
+      <a href="bracelet argent kabyle.jpg">Voir l’image bracelet argent kabyle</a>
+    </ul>
+
+    <div style="text-align:center;">
+      <a href="index.html" class="btn-retour">Retour à l’accueil</a>
+    </div>
+  </div>
+
+</body>
+</html>
